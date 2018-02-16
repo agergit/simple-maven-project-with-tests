@@ -6,5 +6,10 @@ pipeline {
         bat 'c:\\plm\\maven\\bin\\mvn.cmd test'
       }
     }
+    stage('install') {
+      steps {
+        bat 'c:\\plm\\maven\\bin\\mvn.cmd install'
+      }
+    }
   }
 }
