@@ -8,7 +8,7 @@ pipeline {
     }
     stage('install') {
       steps {
-        bat 'c:\\plm\\maven\\bin\\mvn.cmd install'
+        bat 'c:\\plm\\maven\\bin\\mvn.cmd clean install'
       }
     }
   }
